@@ -1,4 +1,4 @@
-<?php
+<?php //
 	$title = 'minimalistica';
 	$header_1 = 'This header has been written by php';
 	$cur_year = date('Y');
