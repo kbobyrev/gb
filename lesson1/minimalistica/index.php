@@ -1,20 +1,20 @@
 <?php
-	$title = 'minimalistica'
-	$header_1 = 'This header has been written by php'
-	$divSpliter = '<p class="div-splitter">This is div splitter</p>'
+	$title = 'minimalistica';
+	$header_1 = 'This header has been written by php';
+	$cur_year = date('Y');
 ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Luka Cvrk (www.solucija.com)" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
-	<?php echo "<title>".$title."</title>" /?>
+	<?php echo "<title>".$title."</title>" ?>
 </head>
 <body>
+    
 	<div id="content">
-		<?php "<h1>".$header_1."</h1>" ?>
+		<?php echo "<h1>".$header_1 ."</h1>" ?>
 		
 		<ul id="menu">
 			<li><a href="#">home</a></li>
@@ -49,11 +49,8 @@
 			<p>Quisque consectetur odio ut sem semper commodo. Maecenas iaculis leo a ligula euismod condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut enim risus, rhoncus sit amet ultricies vel, aliquet ut dolor. Duis iaculis urna vel massa ultricies suscipit. Phasellus diam sapien, fermentum a eleifend non, luctus non augue. Quisque scelerisque purus quis eros sollicitudin gravida. Aliquam erat volutpat. Donec a sem consequat tortor posuere dignissim sit amet at.</p>
 			<p>&not; <a href="#">read more</a></p>
 		</div>
-		<?php
-			echo $divSpliter ;
-		 /?>
 		<div id="footer">
-		      <?= date('Y')?>
+		      <?php echo $cur_year ?>
 			<p>Copyright &copy; <em>minimalistica</em> &middot; Design: Luka Cvrk, <a href="http://www.solucija.com/" title="Free CSS Templates">Solucija</a></p>
 		</div>	
 	</div>
